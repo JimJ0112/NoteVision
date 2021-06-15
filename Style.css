@@ -12,6 +12,18 @@
 /*End of Scrollbar*/
 
 /*large screen layout*/
+button{
+	background-color: #250725;
+	color:white;
+	border: 0.5px solid white;
+}
+
+button:hover{
+	box-shadow: 2px 2px  2px 0px #0ff; /* outer cyan */;
+	border: 1px solid#0ff;
+	color:#0ff;
+	
+}
 body{padding: 0;
 	margin:0;
 background-color: #160c16;
@@ -144,6 +156,9 @@ text-align: center;}
 	text-align: center;
 }
 
+#footer a{
+	margin: 5px;
+}
 
 
 /*Login page*/
@@ -389,7 +404,7 @@ width: 95%;
 	display:block;
 	padding: 5px;
 	padding-bottom:20px;
-	box-shadow: 5px 5px 4px #2c2b2bc9;
+	box-shadow: 5px 5px 4px #225d61c9;
 
 }
 

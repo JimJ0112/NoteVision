@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Note Vision</title>
 	 <link rel="stylesheet" href="Style.css">
+
+	 <script type="text/javascript">
+		function reDirect(){
+			window.location.href = "NotYetAvailable.html";
+		}
+
+	 </script>
 </head>
 <body>
 	<div id="NavBar"> 
@@ -23,7 +30,7 @@
 
 	<div id="appGridContainer">
 		<div class="appGridItem"> 
-			<button class="Notetools1">☰</button> <a href="NotesGallery.html"><p>All Notes</p> </a> <button class="NoteTools">✚</button> 
+			<button class="Notetools1" onclick="reDirect()">☰</button> <a href="NotesGallery.html"><p>All Notes</p> </a> <button class="NoteTools" onclick="reDirect()">✚</button> 
 		
 		</div>
 
@@ -34,14 +41,14 @@
 				<option>Picture Memo</option>
 				<option>List</option>
 			</select>
-			<button class="NoteTools">🖫 </button>  <button class="NoteTools">Info</button> 
+			<button class="NoteTools" onclick="reDirect()">🖫 </button>  <button class="NoteTools" onclick="reDirect()">Info</button> 
 		<button class="Notetools1"><i>I</i></button> <button class="Notetools1"><b>B</b></button> <button class="Notetools1"><u>U</u></button> <button class="Notetools1"><u>Left</u></button> <button class="Notetools1"><u>Center</u></button> <button class="Notetools1"><u>Right</u></button>
 		<button class="Notetools1"><u>Justify</u></button>
 		
 		</div>
 
 		<div class="appGridItem"> 
-			<div><input type="search" id="Searchbox" placeholder="Search.."> <button class="Notetools1">🔍</button></div>
+			<div><input type="search" id="Searchbox" placeholder="Search.."> <button class="Notetools1" onclick="reDirect()">🔍</button></div>
 		<table class="NotesHistory">
 			<tr><td></td></tr>
 			<tr><td></td></tr>
