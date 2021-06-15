@@ -12,6 +12,12 @@
 			window.location.href = "NotYetAvailable.html";
 		}
 
+		function attachfile(){
+			var container = document.getElementById('Categories').value;
+			if(container == "PictureMemo" ) {
+				document.getElementById("PictureNoteButton").style.display="block";
+			} else{document.getElementById("PictureNoteButton").style.display="none";}
+		}
 	 </script>
 </head>
 <body>
@@ -35,10 +41,10 @@
 		</div>
 
 		<div class="appGridItem"> 
-			<select id="Categories">
+			<select id="Categories" onchange="attachfile()">
 				<option>Note</option>
 				<option>Reminder</option>
-				<option>Picture Memo</option>
+				<option value="PictureMemo">Picture Memo</option>
 				<option>List</option>
 			</select>
 			<button class="NoteTools" onclick="reDirect()">🖫 </button>  <button class="NoteTools" onclick="reDirect()">Info</button> 
