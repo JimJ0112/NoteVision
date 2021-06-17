@@ -134,7 +134,11 @@ a,li{
 
 }
 
-table{
+#NoteVisionTitle a{
+    color: rgb(231, 179, 6);
+}
+
+ table{
 	margin: auto;
 	margin-top: 200px;
 	display: block;
@@ -143,12 +147,20 @@ table{
 	width: fit-content;
 	height: fit-content;
 }
-tr{ margin-top: 100px;
+.gridItem tr { 
+    margin-top: 100px;
 	display: inline;
 margin: auto;
-margin-right: 0px;
+margin-right: 100px;
 font-size: x-large;
 text-align: center;}
+
+.gridItem td{
+    text-align:center;
+   
+    height:200px;
+}
+
 .Highlight{
 	color:rgb(156, 222, 248);
 	text-shadow: 0 0 3px skyblue;
@@ -163,6 +175,8 @@ text-align: center;}
 	height: 50px;
 	padding: 10px;
 	text-align: center;
+    z-index:-1;
+    
 }
 
 #footer a{
@@ -337,7 +351,7 @@ height: 30px;
 
 .NotesHistory tr{
 	
-	width: 400px;
+	width: 450px;
 	height: 100px;
 	display: block;
 	box-shadow: 2px 2px 8px #ffd7d763;
@@ -576,14 +590,24 @@ table{
 	margin: auto;
 	margin-top: 100px;
 	width: fit-content;
-
+    display:block;
 	font-size: medium;
 	margin-bottom: 100px;
 }
 tr{font-size: medium;
 	margin-right: 0px;
-margin-bottom: 205px;
-margin-top:0;}
+margin-bottom: 20px;
+margin-top:0;
+text-align:center;
+display:block;
+}
+
+.gridItem td{
+    display:block;
+    text-align:center;
+    
+    height:200px;
+}
 
 /*Login page*/
 #LoginForm{
