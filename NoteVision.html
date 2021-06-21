@@ -34,7 +34,30 @@
 		function TextRight(){document.getElementById("InputTextBox").style.textAlign="right";}
 		function TextCenter(){document.getElementById("InputTextBox").style.textAlign="center";}
 		function TextJustify(){document.getElementById("InputTextBox").style.textAlign="justify";}
+
+
 	 </script>
+
+<script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js">
+	Parse.initialize("d8wMs7Eauj6nmN9HXIufMNMRJIvYhp0TbZBf6zCf", "wubXErE8Eh2KXM3IcdC2EyrIichf7a86eZV6wJ9u"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+	Parse.serverURL = "https://parseapi.back4app.com/classes/notes";
+function trykolang(){
+	var title = document.getElementById('TitleTextBox').value;
+	var content = document.getElementById('InputTextBox').value;
+	(async () => {
+  const myNewObject = new Parse.Object('notes');
+  myNewObject.set('Title', title);
+  myNewObject.set('Content', content);
+  try {
+    const result = await myNewObject.save();
+    // Access the Parse Object attributes using the .GET method
+    console.log('notes created', result);
+  } catch (error) {
+    console.error('Error while creating notes: ', error);
+  }
+})(); }
+
+	</script>
 </head>
 <body>
 	<div id="NavBar"> 
@@ -63,7 +86,7 @@
 				<option value="PictureMemo">Picture Memo</option>
 				<option>List</option>
 			</select>
-			<button class="NoteTools" onclick="reDirect()">🖫 </button>  <button class="NoteTools" onclick="reDirect()">Info</button> 
+			<button class="NoteTools" onclick="trykolang()">🖫 </button>  <button class="NoteTools" onclick="reDirect()">Info</button> 
 		<button class="Notetools1" onclick="TItalic()"><i>I</i></button> <button class="Notetools1" onclick="Tbold()"><b>B</b></button> <button class="Notetools1" onclick="TUnderline()"><u>U</u></button> <button class="Notetools1" onclick="TextLeft()"><u>Left</u></button> <button class="Notetools1" onclick="TextCenter()"><u>Center</u></button> <button class="Notetools1" onclick="TextRight()"><u>Right</u></button>
 		<button class="Notetools1" onclick="TextJustify()"><u>Justify</u></button>
 		
